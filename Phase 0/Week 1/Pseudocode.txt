@@ -1,0 +1,28 @@
+1)	STORE "m" WITH 600
+	STORE "a" WITH 2
+	CALCULATE "m" times "a" AND STORE TO "F"
+	OUTPUT "F"
+	
+2)	INPUT "year"
+	IF "year" modulus 4 EQUAL 0
+		IF year modulus 100 EQUAL 0
+			IF year modulus 400 EQUAL 0
+				"fakta" EQUAL "ini tahun kabisat!"
+			ELSE
+				"fakta" EQUAL "ini bukan tahun kabisat!"
+		"fakta" EQUAL "ini tahun kabisat!"
+	"fakta" EQUAL "ini bukan tahun kabisat!"
+	
+3) 	WHILE TRUE
+		IF "i" EQUAL 20
+			OUTPUT "Mesin cuci siap digunakan"
+			BREAK
+		INCREMENT "i" by 1
+		
+4)	STORE ARRAY "kuku" WITH 40 DATA AND 2 VALUE, EITHER "panjang" OR "pendek"
+	WHILE "i" LESS THAN EQUAL LENGTH OF "kuku"
+		IF "kuku" WITH INDEX OF "i" EQUAL "panjang"
+			OUTPUT "BANDEL YAH!!!"
+		ELSE
+			OUTPUT "NAH GITU DONG!!!"
+		INCREMENT "i" by 1
